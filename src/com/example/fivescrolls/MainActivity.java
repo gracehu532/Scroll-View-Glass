@@ -3,13 +3,9 @@ package com.example.fivescrolls;
 import java.util.ArrayList;
 import java.util.List;
 
-import android.R;
 import android.app.Activity;
 import android.os.Bundle;
-import android.view.KeyEvent;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -22,11 +18,7 @@ public class MainActivity extends Activity {
 
     private List<Card> mCards;
     private CardScrollView mCardScrollView;
-   /* 
-    private EyeEventListener listener;
-    private Context context;
-    private Intent intent;
-*/
+  
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,21 +27,22 @@ public class MainActivity extends Activity {
 
         mCardScrollView = new CardScrollView(this);
         ExampleCardScrollAdapter adapter = new ExampleCardScrollAdapter();
-        
-        //EyeEventReceiver winkReceiver = new EyeEventReceiver(listener);
-        
-        
+   
         mCardScrollView.setAdapter(adapter);
-        //winkReceiver.onReceive(context, intent);
         mCardScrollView.activate(); //wink here
         setContentView(mCardScrollView);
     }
 
     private void createCards() {
+    	Log.i("Grace","MainActivity Live Cards Test");
         mCards = new ArrayList<Card>();
 
         Card card;
 
+        card = new Card(this);
+        card.setText("livecards");
+        mCards.add(card);
+        
         card = new Card(this);
         card.setText("LB Broth");
         mCards.add(card);
@@ -213,32 +206,6 @@ public class MainActivity extends Activity {
         card.setText("Label the bag and store at 4 degrees Celsius until use\nLabel includes: your initials, date, type of plate (ex: LB + Amp)");
         card.setFootnote("LB Agar 20/20");
         mCards.add(card);
-    }
-    
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu, menu);
-        return true;
-    }
-    
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle item selection
-    	if (item.getItemId() == R.id.lb_broth)
-                return true;
-    	else if (item.getItemId() == R.id.lb_agar)
-                return true;
-    	else
-                return super.onOptionsItemSelected(item);
-        }
-    
-    @Override
-    public boolean onKeyDown(int keyCode, KeyEvent event) {
-          if (keyCode == KeyEvent.KEYCODE_DPAD_CENTER) {
-              openOptionsMenu();
-              return true;
-          }
-          return false;
     }
 
     private class ExampleCardScrollAdapter extends CardScrollAdapter {

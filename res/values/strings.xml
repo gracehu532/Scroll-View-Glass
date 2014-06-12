@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Five Scrolls</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="broth">LB Broth</string>
-    <string name="agar">LB Agar</string>
+    <string name="app_name">BU SynBio Protocol</string>
+    <string name="glass_voice_prompt">Show Protocol</string>
 
 </resources>
