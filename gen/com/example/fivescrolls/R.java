@@ -972,7 +972,83 @@ containing a value of this type.
         public static int abc_textfield_searchview_holo_light=0x7f020054;
         public static int abc_textfield_searchview_right_holo_dark=0x7f020055;
         public static int abc_textfield_searchview_right_holo_light=0x7f020056;
-        public static int ic_launcher=0x7f020057;
+        public static int ic_add_person_50=0x7f020057;
+        public static int ic_angle_50=0x7f020058;
+        public static int ic_archive_50=0x7f020059;
+        public static int ic_arrow_left_50=0x7f02005a;
+        public static int ic_arrow_right_50=0x7f02005b;
+        public static int ic_attachment_50=0x7f02005c;
+        public static int ic_beamed_note_50=0x7f02005d;
+        public static int ic_bed_50=0x7f02005e;
+        public static int ic_bike_50=0x7f02005f;
+        public static int ic_bluetooth_50=0x7f020060;
+        public static int ic_bus_50=0x7f020061;
+        public static int ic_calendar_50=0x7f020062;
+        public static int ic_camera_50=0x7f020063;
+        public static int ic_compass_50=0x7f020064;
+        public static int ic_computer_50=0x7f020065;
+        public static int ic_delete_50=0x7f020066;
+        public static int ic_directions_50=0x7f020067;
+        public static int ic_document_50=0x7f020068;
+        public static int ic_done_150=0x7f020069;
+        public static int ic_done_50=0x7f02006a;
+        public static int ic_drive_50=0x7f02006b;
+        public static int ic_eighth_note_50=0x7f02006c;
+        public static int ic_email_50=0x7f02006d;
+        public static int ic_forward_50=0x7f02006e;
+        public static int ic_game_50=0x7f02006f;
+        public static int ic_gear_50=0x7f020070;
+        public static int ic_help_50=0x7f020071;
+        public static int ic_launcher=0x7f020072;
+        public static int ic_location_50=0x7f020073;
+        public static int ic_message_50=0x7f020074;
+        public static int ic_microphone_off_50=0x7f020075;
+        public static int ic_microphone_on_50=0x7f020076;
+        public static int ic_mobile_phone_50=0x7f020077;
+        public static int ic_music_move_to_end_50=0x7f020078;
+        public static int ic_music_move_to_front_50=0x7f020079;
+        public static int ic_music_next_50=0x7f02007a;
+        public static int ic_music_pause_50=0x7f02007b;
+        public static int ic_music_play_50=0x7f02007c;
+        public static int ic_music_previous_50=0x7f02007d;
+        public static int ic_no_50=0x7f02007e;
+        public static int ic_note_50=0x7f02007f;
+        public static int ic_pen_50=0x7f020080;
+        public static int ic_people_50=0x7f020081;
+        public static int ic_person_50=0x7f020082;
+        public static int ic_phone_50=0x7f020083;
+        public static int ic_phone_hang_50=0x7f020084;
+        public static int ic_phone_in_50=0x7f020085;
+        public static int ic_phone_out_50=0x7f020086;
+        public static int ic_photo_50=0x7f020087;
+        public static int ic_placeholder_attachment_50=0x7f020088;
+        public static int ic_placeholder_photo_150=0x7f020089;
+        public static int ic_placeholder_video_150=0x7f02008a;
+        public static int ic_plus_50=0x7f02008b;
+        public static int ic_question_150=0x7f02008c;
+        public static int ic_read_aloud_50=0x7f02008d;
+        public static int ic_reply_50=0x7f02008e;
+        public static int ic_reply_all_50=0x7f02008f;
+        public static int ic_run_50=0x7f020090;
+        public static int ic_search_50=0x7f020091;
+        public static int ic_select_link_50=0x7f020092;
+        public static int ic_share_50=0x7f020093;
+        public static int ic_star_50=0x7f020094;
+        public static int ic_storefront_50=0x7f020095;
+        public static int ic_sync_50=0x7f020096;
+        public static int ic_timer_50=0x7f020097;
+        public static int ic_transit_50=0x7f020098;
+        public static int ic_unstar_50=0x7f020099;
+        public static int ic_video_50=0x7f02009a;
+        public static int ic_video_off_50=0x7f02009b;
+        public static int ic_volume_full_50=0x7f02009c;
+        public static int ic_volume_half_50=0x7f02009d;
+        public static int ic_volume_muted_50=0x7f02009e;
+        public static int ic_walk_50=0x7f02009f;
+        public static int ic_warning_150=0x7f0200a0;
+        public static int ic_warning_50=0x7f0200a1;
+        public static int ic_world_50=0x7f0200a2;
+        public static int menu_icons=0x7f0200a3;
     }
     public static final class id {
         public static int action_bar=0x7f05001c;
@@ -1004,6 +1080,8 @@ containing a value of this type.
         public static int icon=0x7f05002a;
         public static int ifRoom=0x7f05000a;
         public static int image=0x7f050027;
+        public static int lb_agar=0x7f05003d;
+        public static int lb_broth=0x7f05003c;
         public static int listMode=0x7f050001;
         public static int list_item=0x7f050029;
         public static int middle=0x7f050012;
@@ -1088,6 +1166,9 @@ containing a value of this type.
         public static int activity_main=0x7f030017;
         public static int support_simple_spinner_dropdown_item=0x7f030018;
     }
+    public static final class menu {
+        public static int menu=0x7f0c0000;
+    }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
          */
@@ -1129,7 +1210,9 @@ containing a value of this type.
         /**  Description of a share target (both in the list of such or the default share button) in a ShareActionProvider (share UI). [CHAR LIMIT=NONE] 
          */
         public static int abc_shareactionprovider_share_with_application=0x7f0a000b;
+        public static int agar=0x7f0a0010;
         public static int app_name=0x7f0a000d;
+        public static int broth=0x7f0a000f;
         public static int hello_world=0x7f0a000e;
     }
     public static final class style {

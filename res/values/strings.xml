@@ -3,5 +3,7 @@
 
     <string name="app_name">Five Scrolls</string>
     <string name="hello_world">Hello world!</string>
+    <string name="broth">LB Broth</string>
+    <string name="agar">LB Agar</string>
 
 </resources>

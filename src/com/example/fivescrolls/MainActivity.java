@@ -5,6 +5,10 @@ import java.util.List;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.KeyEvent;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -208,6 +212,32 @@ public class MainActivity extends Activity {
         card.setText("Label the bag and store at 4 degrees Celsius until use\nLabel includes: your initials, date, type of plate (ex: LB + Amp)");
         card.setFootnote("LB Agar 20/20");
         mCards.add(card);
+    }
+    
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
+        return true;
+    }
+    
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle item selection
+    	if (item.getItemId() == R.id.lb_broth)
+                return true;
+    	else if (item.getItemId() == R.id.lb_agar)
+                return true;
+    	else
+                return super.onOptionsItemSelected(item);
+        }
+    
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+          if (keyCode == KeyEvent.KEYCODE_DPAD_CENTER) {
+              openOptionsMenu();
+              return true;
+          }
+          return false;
     }
 
     private class ExampleCardScrollAdapter extends CardScrollAdapter {
